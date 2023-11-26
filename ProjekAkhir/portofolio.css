@@ -1,0 +1,162 @@
+.portofolio .title {
+  margin-top: 30px;
+}
+
+.portofolio hr {
+  background-color: aliceblue;
+  padding: 1px;
+  margin: 20px auto 40px auto;
+}
+
+.portofolio {
+  margin-bottom: 150px;
+}
+.portofolio .title h2 {
+  text-align: center;
+  font-size: 27px;
+}
+
+.portofolio .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.portofolio .card {
+  border: 3px solid white;
+  width: 350px;
+  height: 420px;
+  border-radius: 7px;
+}
+
+.portofolio .card article {
+  padding: 10px 15px 10px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.portofolio .card h3 {
+  font-size: 23px;
+}
+.portofolio .card h4 {
+  margin-top: -5px;
+  margin-bottom: 10px;
+  font-weight: 100;
+}
+
+.portofolio .card article ul {
+  padding-left: 20px;
+}
+
+.portofolio .card img {
+  border-radius: 7px 7px 0 0;
+  object-fit: cover;
+  border-bottom: 1px solid white;
+}
+
+.portofolio .card article ul#flex {
+  display: flex;
+  gap: 50px;
+}
+
+/* superior */
+.superior {
+  margin-top: 100px;
+}
+
+.superior .title {
+  margin-bottom: 20px;
+}
+
+.superior .cardsSuper {
+  display: flex;
+  overflow-x: scroll;
+  white-space: nowrap;
+  gap: 5px;
+  scroll-behavior: smooth;
+}
+
+.superior .cardsSuper::-webkit-scrollbar {
+  width: 0;
+}
+
+.superior .cardsSuper::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.superior .cardsSuper::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.superior .cardsSuper .cardSuper {
+  margin: 20px;
+  width: 800px;
+  height: 640px;
+  scroll-snap-align: start;
+  border: 2px solid white;
+  border-radius: 7px;
+  flex: 0 0 auto;
+}
+
+.superior .cardsSuper article {
+  padding: 10px 15px 20px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.superior .cardSuper img {
+  border-radius: 7px 7px 0 0;
+  object-fit: cover;
+  border-bottom: 1px solid white;
+}
+
+.superior .cardSuper article h3 {
+  font-size: 27px;
+}
+
+.superior .cardSuper article h4 {
+  font-size: 18px;
+  margin-top: -10px;
+  font-weight: 100;
+}
+
+.superior .cardSuper article ul#flex {
+  display: flex;
+  gap: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .portofolio .card h3 {
+    font-size: 22px;
+  }
+  .portofolio .card {
+    height: 415px;
+  }
+  .superior .cardsSuper {
+    height: 500px;
+  }
+  .superior .cardsSuper .cardSuper {
+    width: 340px;
+    height: 390px;
+  }
+  .cardsSuper {
+    height: 300px;
+  }
+  .superior .cardSuper article h3 {
+    font-size: 22px;
+  }
+
+  .superior .cardSuper article h4 {
+    font-size: 16px;
+    margin-top: -10px;
+    font-weight: 100;
+  }
+
+  .superior .cardSuper ul {
+   padding-left: 15px;
+  }
+}

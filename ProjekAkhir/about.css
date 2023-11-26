@@ -1,0 +1,50 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.about .title {
+  margin-top: 30px;
+}
+
+.about .title h2 {
+  font-size: 27px;
+}
+
+.about hr {
+  padding: 1px;
+  width: 100%;
+  background-color: aliceblue;
+  margin: 20px auto 40px auto;
+}
+
+.about article {
+  width: 100%;
+}
+
+.about table[x] {
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+}
+
+@media only screen and (max-width: 600px) {
+  .about .none {
+    display: none;
+  }
+  .about table {
+    width: 100%;
+  }
+  .about table .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding-left: 17px !important;
+    /* border: 2px solid red; */
+  }
+  .about table[x] {
+    border-left: none;
+  }
+}
